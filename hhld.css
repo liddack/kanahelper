@@ -27,7 +27,7 @@
 }
 @media (max-width: 700px){
 	body {
-		background: rgb(207, 255, 147);
+		background: rgb(207, 255, 147)!important;
 	}
 	#nivel {
 		background: rgb(139, 216, 42);
