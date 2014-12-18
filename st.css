@@ -1,0 +1,144 @@
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body { 
+			margin:0px;
+			font-family: 'Montserrat', Tahoma, sans-serif;
+		}
+		#nivel {
+			text-align:center;
+			margin-top: 25px;
+		}	
+		label {font-size:medium;}
+		#quiz {
+			text-align: center;
+			margin-top: 100px;
+			margin-bottom: 14px;
+		}
+		#entra {
+			display: block;
+			font-size: 105px;
+			transition:all linear .8s;
+		}
+		#respo {
+			font-size: 22px;
+			margin-bottom: 55px;
+			margin-top: 19px;
+			width: 279px;
+			text-align: center;
+		}
+		#yaay {
+			opacity: 0; 
+			transition:all ease .5s; 
+			font-size: xx-large;
+		}
+		#entra, #yaay, #dica {
+			display: block;
+		}
+		#dica {
+			opacity: 0; 
+			transition:all ease .5s; 
+			font-size: xx-large;
+		}
+		#porteira {
+			z-index: 11;  
+			width: 100%;  
+			height: 100%; 
+			display:block;
+			text-align:center;
+			background:linear-gradient(rgb(199, 255, 236) 70%, aqua 118%);
+			bottom: 0;
+			position: fixed;
+			transition:all cubic-bezier(0,0,0,0.94) 1s;
+		}
+		#meio {
+			margin: auto; 
+			position: absolute; 
+			top: 0px; 
+			bottom: 0px;
+			left: 0px;
+			right: 0px; 
+			max-height: 33px
+		}
+		#conversor {
+			position: fixed;
+			transition:all cubic-bezier(0,0,0,0.94) 1.2s; 
+			bottom: 0;
+			height: 50px; 
+			left: 0; 
+			right: 0; 
+			text-align:center; 
+			box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.44);
+			padding-top: 16px;
+			background:linear-gradient(rgba(240, 240, 240, 0.55),white 24%,rgb(173, 252, 129)); 
+			border-top-left-radius: 0px; 
+			border-top: none;
+			border-top-right-radius: 0px;
+			border-left: none; 
+			border-right: none; 
+		}
+		#texto1 { 
+			font-size: x-large; 
+			transition:all ease .4s;
+			-webkit-user-select:none;
+			-ms-user-select:none;
+			-moz-user-select:none;
+			cursor:pointer;
+		}
+		#texto1 div {
+vertical-align: middle;
+display: inline-block;
+}
+		#contconv { margin-top: 14%;}
+		#entconv {
+			font-size: 20px; 
+			margin-bottom: 38px; 
+		}		
+		.bt{ font-size: larger; }
+		#saida {
+			display: inline-block;
+			font-size: 119px;
+			background: white;
+			border: 1px solid black;
+		}
+		.saida {
+			line-height: 106%;
+			padding: 0 125px;
+		}
+		#saida div:last-child {
+			font-size: 28px;
+		}
+		#uso { margin-bottom: 8px}
+		
+		#abre {
+			font-size: inherit;
+			font-family: inherit; 
+		}
+		.ativo {
+			height: 97%!important;
+			border-top-left-radius: 35px!important; 
+			border-top-right-radius: 35px!important; 
+			border-left-width: 2px!important; 
+			border-left-style: solid!important; 
+			border-left-color: gray!important; 
+			border-right-width: 2px!important; 
+			border-right-style: solid!important; 
+			border-right-color: gray!important; 
+			border-top-width: 2px!important; 
+			border-top-style: solid!important; 
+			border-top-color: gray!important;
+		}
+		.alta {
+			bottom : 100%!important;
+		}
+		button {
+			font-family: 'Segoe UI', Tahoma, inherit
+		}
+		button.doo {
+			display: none;
+		}
