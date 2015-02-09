@@ -8,7 +8,7 @@
 }
 body { 
 	margin:0px;
-	font-family: 'Montserrat', Tahoma, sans-serif;
+	font-family: 'Montserrat', 'Segoe UI Semibold', 'Segoe UI', Tahoma, sans-serif;
 	background: radial-gradient(rgb(241, 255, 224),rgb(179, 247, 94));
 	background-attachment: fixed;
 }
@@ -16,7 +16,14 @@ body {
 	text-align:center;
 	margin-top: 25px;
 }	
-label {font-size:medium;}
+form label {
+    font-size: inherit;
+}
+
+form input {
+    height: 1.3em;
+    width: 1.3em;
+}
 #quiz {
 	text-align: center;
 	margin-top: 100px;
@@ -56,7 +63,12 @@ label {font-size:medium;}
 	background:linear-gradient(rgb(199, 255, 236) 70%, aqua 118%);
 	bottom: 0;
 	position: fixed;
-	transition:all cubic-bezier(0,0,0,0.94) 1s;
+	transition: all cubic-bezier(0,0,.1,1) 1s;
+	font-size: 180%;
+	-webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
 }
 #meio {
 	margin: auto; 
@@ -65,11 +77,10 @@ label {font-size:medium;}
 	bottom: 0px;
 	left: 0px;
 	right: 0px; 
-	max-height: 33px
-}
+	max-height: 95px;}
 #conversor {
 	position: fixed;
-	transition:all cubic-bezier(0,0,0,0.94) 1.2s; 
+	transition: all cubic-bezier(.55,0,.1,1) 1.2s; 
 	bottom: 0;
 	height: 50px; 
 	left: 0; 
@@ -86,13 +97,14 @@ label {font-size:medium;}
 }
 #texto1 { 
 	font-size: x-large; 
-	transition:all ease .4s;
+	transition: all cubic-bezier(0,0,.1,1) .4s;
 	-webkit-user-select:none;
 	-ms-user-select:none;
 	-moz-user-select:none;
 	cursor:pointer;
 
 	text-shadow: 0 1px 1px white;
+	outline: none;
 }
 #texto1 div {
 	vertical-align: middle;
@@ -132,6 +144,15 @@ label {font-size:medium;}
 #abre {
 	font-size: inherit;
 	font-family: inherit; 
+	border: none;
+	text-transform: uppercase;
+	/* background: rgba(60, 166, 9, 0); */
+	border-radius: 2px;
+	padding: 2px 8px;
+	color: rgb(255, 255, 255);
+	outline: none;
+	transition: all cubic-bezier(.55,0,.1,1) .3s;
+	/* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); */
 }
 .ativo {
 	height: 97%!important;
@@ -153,6 +174,19 @@ label {font-size:medium;}
 button {
 	font-family: 'Segoe UI', Tahoma, inherit
 }
-button.doo {
+#doo {
 	display: none;
+	position: relative;
+	-webkit-user-select: none;        
+	-moz-user-select: none;        
+	-ms-user-select: none;        
+	user-select: none;
+}
+
+#abre:focus {
+    /* background: rgb(49, 123, 14); */
+}
+
+ {
+    /* background: transparent; */
 }

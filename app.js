@@ -51,7 +51,7 @@ $(document).ready(function() {
 						break;
 				}
 			});
-			$('.doo').click(function() {
+			$('#doo').click(function() {
 				$('#porteira').removeClass('alta');
 				$('#abre').focus();
 			});
@@ -475,8 +475,9 @@ $(document).ready(function() {
 			romaji[166]='rou'
 			romaji[167]='waa'
 			//^^Nível FINAL 10^^
-			aleatorio = Math.random() * (nivel);
-			aleatorio = Math.floor(aleatorio);
+
+			// Fórmula para conseguir um número aleatório de acordo com o nível
+			aleatorio = Math.floor(Math.random() * (nivel));
 			$('#entra').html(kanas[alt][aleatorio]);
 			tabom=0;
 		}
